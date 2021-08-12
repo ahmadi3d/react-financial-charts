@@ -143,6 +143,7 @@ export class ZoomButtons extends React.Component<ZoomButtonsProps> {
         const { xAxisZoom, xScale, plotData, xAccessor } = this.context;
 
         const cx = xScale(xAccessor(last(plotData)));
+        console.log('cx', cx);
 
         const { zoomMultiplier } = this.props;
 
